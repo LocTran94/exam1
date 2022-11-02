@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" style="border: 2px solid" width="500px" height="500px"></canvas>
+</body>
+<script>
+    // Câu 3 : Viết hàm sumOfListFibonacy() nhận vào một số nguyên x ,
+    // hàm trả về giá trị là tổng các số fibonacy từ 0 cho tới x
+
+    // function sumOfListFibonacy(x) {
+    //     let arr = [0, 1];
+    //     let a = 0;
+    //     let b = 1;
+    //     let temp;
+    //     let sum = 0;
+    //     for (let i = 2; ; i++) {
+    //         if (a + b > x) break;
+    //         arr.push(a + b);
+    //         temp = a;
+    //         a = b;
+    //         b = temp + b;
+    //     }
+    //     for (let i = 0; i < arr.length; i++) {
+    //         sum += arr[i];
+    //     }
+    //     return sum;
+    // }
+    //
+    // document.write('' + sumOfListFibonacy(10))
+
+
+    // Câu 4:  tả của lớp hình tròn như sau:
+    // Circle: Tên lớp
+    // - x: Toạ độ x
+    // - y: Toạ độ y
+    // -radius: bán kính
+    // - color: Màu sắc (sử dụng max hex)
+    // + render(canvas): Hiển thị hình tròn trên một canvas
+
+    // class Circle {
+    //     x;
+    //     y;
+    //     radius;
+    //     color;
+    //
+    //     constructor(x, y, radius, color) {
+    //         this.x = x;
+    //         this.y = y;
+    //         this.radius = radius;
+    //         this.color = color;
+    //     }
+    //
+    //     getRender() {
+    //         let ctx = document.getElementById('myCanvas').getContext('2d');
+    //         ctx.fillStyle = this.color;
+    //         ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
+    //         ctx.fill();
+    //     }
+    // }
+    //
+    // let circle1 = new Circle(100, 100, 100, 'red')
+    // circle1.getRender()
+
+
+    //  Câu 1 : Cho danh sách các điểm thi ở trong một mảng. Hãy viết
+    // hàm findMax() với đầu vào là một mảng điểm và đầu ra là
+    // điểm thi lớn thứ 2
+    //
+    // let arr = [1, 3, 9, 4, 8, 11, 15];
+    // let max = arr[0];
+    // let max1 = arr[1];
+    //
+    // function findMax(arr) {
+    //     for (let i = 0; i < arr.length; i++) {
+    //         if (arr[i] > max) {
+    //             max = arr[i];
+    //             for (let j = 0; j < arr.length; j++) {
+    //                 if (arr[j] > max1 && arr[j] < arr[i]) {
+    //                     max1 = arr[j];
+    //                 }
+    //             }
+    //
+    //         }
+    //     }
+    //     return max1;
+    // }
+    //
+    // document.write(findMax(arr));
+
+
+    //câu 2 : Viết hàm deleteNumberFromArray() nhận vào một mảng
+    // các số nguyên và một số nguyên vị trí index. Hàm trả về
+    // mảng ban đầu nếu vị trí index có giá trị nhỏ hơn 0 hoặc lớn
+    // hơn chiều dài mảng. Nếu không thì trả về mảng mới đã
+    // được xóa phần tử ở vị trí index
+    //
+    // function deleteNumberFromArray(arr, index) {
+    //     let newArr = [];
+    //     if (index >= 0 && index < arr.length) {
+    //         for (let i = 0; i < index; i++) {
+    //             newArr.push(arr[i]);
+    //         }
+    //         for (let i = index + 1; i < arr.length; i++) {
+    //             newArr.push(arr[i]);
+    //         }
+    //     } else return arr;
+    //     return newArr;
+    // }
+    //
+    // let arr = [1, 2, 3, 4, 5, 6]
+    // let index = +prompt()
+    // document.write(deleteNumberFromArray(arr, index) + '')
+
+</script>
+</html>
